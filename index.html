@@ -9,26 +9,114 @@
   <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/pecita" rel="stylesheet">
-
 </head>
-  <!-- HEADER -->
-  <header class="header">
-    <h1>Viajes de Película</h1>
-    <img src="image.png" width="100" height="100" alt="Logo">
-
-    <div class="user-actions">
-      <button><i class="registro"></i> Iniciar Sesión</button>
-      <button><i class="registro"></i> Registrarse</button>
-    </div>
-  </header>
-  
-  
-  <div>
-    
-  </div>
-  
 
 <body>
-  
+  <div class="page">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="brand">
+      <h1>Viajes de Película</h1>
+      <img src="image.png" alt="Logo" class="logoimg">
+    </div>
+
+    <div class="user-actions">
+      <button class="iniciarsesion">Iniciar Sesión</button>
+      <button class="registro">Registrarse</button>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#peliculas">Películas</a></li>
+      <li><a href="#ofertas">Ofertas</a></li>
+      <li><a href="#destinos">Destinos</a></li>
+      <li><a href="#sobre-nosotras">Sobre Nosotras</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- HERO IMAGE -->
+    <section class="hero" aria-label="Mapa temático">
+      <!-- TODO: Reemplazar la imagen del hero por la versión final -->
+      <img src="https://via.placeholder.com/1200x300?text=Imagen+Hero" alt="Mapa inspirado en películas">
+    </section>
+
+    <!-- SEARCH BAR -->
+    <section class="search-bar" aria-label="Formulario de búsqueda">
+      <form>
+        <label class="search-field">
+          <span>Origen</span>
+          <input type="search" name="origen" placeholder="Ciudad de salida">
+        </label>
+        <label class="search-field">
+          <span>Película</span>
+          <input type="search" name="pelicula" placeholder="Nombre pelicula">
+        </label>
+        <label class="search-field">
+          <span>Fechas</span>
+          <input type="date" name="fechas" placeholder="dd/mm/aaaa">
+        </label>
+        <label class="search-field">
+          <span>Personas</span>
+          <input type="number" min="1" name="personas" placeholder="Número">
+        </label>
+        <button type="submit" class="buscar">Buscar</button>
+      </form>
+    </section>
+
+    <!-- FEATURED DESTINATIONS -->
+    <section id="destinos" class="featured-destinations" aria-label="Destinos destacados">
+      <article class="destination-card card-verde">
+        <div class="card-image">
+          <!-- TODO: Sustituir por imagen del destino correspondiente -->
+          <img src="https://via.placeholder.com/400x260?text=Destino+1" alt="Destino inspirado en El Señor de los Anillos">
+        </div>
+        <div class="card-content">
+          <h2>El Señor de los Anillos</h2>
+          <p>Déjate sorprender por un viaje mágico a Nueva Zelanda, lugar donde se rodó El Señor de los Anillos.</p>
+          <a href="#" class="card-button">Saber más</a>
+        </div>
+      </article>
+
+      <article class="destination-card card-rosa">
+        <div class="card-image">
+          <!-- TODO: Sustituir por imagen del destino correspondiente -->
+          <img src="https://via.placeholder.com/400x260?text=Destino+2" alt="Destino inspirado en Moulin Rouge">
+        </div>
+        <div class="card-content">
+          <h2>Moulin Rouge</h2>
+          <p>Revive una de las historias de amor más conocidas viajando a París, la ciudad del amor.</p>
+          <a href="#" class="card-button">Saber más</a>
+        </div>
+      </article>
+
+      <article class="destination-card card-azul">
+        <div class="card-image">
+          <!-- TODO: Sustituir por imagen del destino correspondiente -->
+          <img src="https://via.placeholder.com/400x260?text=Destino+3" alt="Destino inspirado en Mamma Mia">
+        </div>
+        <div class="card-content">
+          <h2>Mamma Mia!</h2>
+          <p>Recorre las playas y visita dónde se rodó el maravilloso musical de Mamma Mia.</p>
+          <a href="#" class="card-button">Saber más</a>
+        </div>
+      </article>
+    </section>
+  </main>
+    <footer class="footer" id="sobre-nosotras">
+    <div class="footer-brand">
+      <img src="image.png" alt="Logo" class="logoimg">
+      <button class="sobre-nosotras-btn">Sobre Nosotras</button>
+    </div>
+    
+    <div class="footer-contact">
+      <p class="footer-tag">¿Necesitas ayuda?</p>
+      <p class="footer-phone">📞 9345556738</p>
+      <p class="footer-email">📧 viajesdepelicula.agencia.es</p>
+    </div>
+  </footer>
+  </div>
 </body>
 </html>
