@@ -1,76 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="diseñoregistro.css">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
-    <title>Registro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regístrate · Viajes de Película</title>
+  <link rel="stylesheet" href="registro.css">
+  <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/pecita" rel="stylesheet">
 </head>
-
 <body>
-
-    <header>
-        <h2>Registrate</h2>
-        <div class="botones">
-            <button class="login">Iniciar sesión</button>
-            <button class="registro">Registrarse</button>
-        </div>
+  <div class="auth-page">
+    <header class="auth-header">
+      <a href="index.html" class="brand" aria-label="Volver al inicio">
+        <img src="images/image.png" alt="Logo Viajes de Película" class="brand-logo">
+        <h1>Viajes de Película</h1>
+      </a>
+      <a href="index.html" class="back-link">← Volver</a>
     </header>
 
+    <main class="auth-main">
+      <section class="auth-card" aria-labelledby="register-title">
+        <h2 id="register-title">Crea tu cuenta</h2>
+        <p class="auth-subtitle">Introduce tus datos para comenzar a viajar con tus películas favoritas</p>
 
-    <main class="contenedor-principal">
-        <article class="caja">
-            <p class="textodentro">Introduce tus datos personales</p>
-            <form action="#" method="POST">
+        <form class="auth-form">
+          <label class="input-group">
+            <span>Nombre</span>
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+          </label>
 
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+          <label class="input-group">
+            <span>Apellido</span>
+            <input type="text" name="apellido" placeholder="Tu apellido" required>
+          </label>
 
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required>
+          <label class="input-group">
+            <span>Correo electrónico</span>
+            <input type="email" name="email" placeholder="tu@correo.com" required>
+          </label>
 
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+          <label class="input-group">
+            <span>Contraseña</span>
+            <input type="password" name="password" placeholder="Crea una contraseña" required>
+          </label>
 
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" placeholder="********" required>
+          <label class="input-group">
+            <span>Número de teléfono</span>
+            <input type="tel" name="telefono" placeholder="+34 600 000 000" required>
+          </label>
 
-                <label for="telefono">Número de teléfono</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" required>
-            </form>
+          <button type="submit" class="auth-submit">Registrarme</button>
+        </form>
 
-            <button class="registrarse">Registrese</button>
-        </article>
-
-        <img class="imagen-derecha"
-            src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDEzfHx8ZW58MHx8fHx8"
-            alt="Imagen registro">
+        <p class="auth-hint">¿Ya tienes cuenta? <a href="iniciarsesion.html">Inicia sesión</a></p>
+      </section>
     </main>
+
     <footer class="footer">
-
-        <span class="footer-left">
-            <span class="icon-claqueta">🎬</span>
-            <span class="ovalo-rojo">Sobre nosotros</span>
-        </span>
-
-        <span class="footer-right">
-            <span class="footer-item">
-                <span class="icon">❓</span>
-                <span class="texto">¿Necesitas ayuda?</span>
-            </span>
-            <span class="footer-item">
-                <span class="icon">📞</span>
-                <span class="texto">934556738</span>
-            </span>
-            <span class="footer-item">
-                <span class="icon">🌐</span>
-                <span class="texto">viajesdepelicula.agencia.es</span>
-            </span>
-        </span>
+      <div class="footer-brand">
+        <img src="images/image.png" alt="Logo" class="logoimg">
+        <button class="sobre-nosotros-btn" onclick="window.location.href='sobrenosotros.html'">Sobre Nosotros</button>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-tag">¿Necesitas ayuda?</p>
+        <p class="footer-phone">📞 9345556738</p>
+        <p class="footer-email">📧 viajesdepelicula.agencia.es</p>
+      </div>
     </footer>
+  </div>
 </body>
-
 </html>

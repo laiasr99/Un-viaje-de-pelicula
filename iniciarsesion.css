@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 
-.login-page {
+.auth-page {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
@@ -22,7 +22,7 @@ body {
   padding: 2rem 1.5rem 3rem;
 }
 
-.login-header {
+.auth-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,39 +67,39 @@ body {
   transform: translateY(-2px);
 }
 
-.login-main {
+.auth-main {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.login-card {
+.auth-card {
   background-color: #fdfdfd;
   border-radius: 24px;
   border: 3px solid #4b89ff;
-  padding: 2.5rem 3rem;
-  box-shadow: 0 12px 20px rgba(20, 20, 63, 0.12);
+  padding: 3rem 3.4rem;
+  box-shadow: 0 14px 24px rgba(20, 20, 63, 0.14);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   max-width: 520px;
   width: 100%;
 }
 
-.login-card h2 {
-  font-size: 2.2rem;
+.auth-card h2 {
+  font-size: 2.8rem;
 }
 
-.login-subtitle {
-  font-size: 1.1rem;
-  color: #3a3a3a;
+.auth-subtitle {
+  font-size: 1.3rem;
+  color: #2d2d2d;
 }
 
-.login-form {
+.auth-form {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
 .input-group {
@@ -114,15 +114,15 @@ body {
 }
 
 .input-group span {
-  font-size: 1.1rem;
-  color: #2a2a2a;
+  font-size: 1.25rem;
+  color: #1c1c1c;
 }
 
 .input-group input {
   border: none;
   font-family: 'Pecita', cursive;
-  font-size: 1.05rem;
-  padding: 0.25rem 0;
+  font-size: 1.2rem;
+  padding: 0.35rem 0;
   color: #1f1f1f;
   background: transparent;
 }
@@ -135,7 +135,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
 }
 
 .remember {
@@ -147,7 +147,7 @@ body {
 .forgot-link {
   color: #1f1f1f;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   transition: opacity 0.2s ease;
 }
 
@@ -155,42 +155,42 @@ body {
   opacity: 0.7;
 }
 
-.login-submit {
+.auth-submit {
   align-self: flex-end;
-  padding: 0.8rem 2.2rem;
+  padding: 1rem 2.6rem;
   background-color: #8ff2c2;
   border: none;
   border-radius: 999px;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   cursor: pointer;
   font-family: 'Pecita', cursive;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.login-submit:hover {
+.auth-submit:hover {
   opacity: 0.85;
   transform: translateY(-2px);
 }
 
-.register-hint {
-  font-size: 1rem;
+.auth-hint {
+  font-size: 1.1rem;
   text-align: center;
 }
 
-.register-hint a {
+.auth-hint a {
   color: #4b89ff;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
 
-.register-hint a:hover {
+.auth-hint a:hover {
   opacity: 0.7;
 }
 
 @media (max-width: 720px) {
-  .login-card {
-    padding: 2rem;
+  .auth-card {
+    padding: 2.4rem 2rem;
   }
 
   .form-actions {
@@ -199,7 +199,7 @@ body {
     align-items: flex-start;
   }
 
-  .login-submit {
+  .auth-submit {
     width: 100%;
     align-self: stretch;
     text-align: center;
@@ -259,7 +259,7 @@ body {
 }
 
 @media (max-width: 720px) {
-  .login-page {
+  .auth-page {
     padding: 1.5rem 1rem 2rem;
   }
 
