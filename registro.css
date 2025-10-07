@@ -1,0 +1,14 @@
+@import url('iniciarsesion.css');
+
+/* Ajustes específicos de la página de registro */
+.auth-card {
+  max-width: 560px;
+}
+
+.auth-form {
+  gap: 1.6rem;
+}
+
+.auth-submit {
+  align-self: flex-end;
+}
