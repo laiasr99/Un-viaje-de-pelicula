@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión · Viajes de Película</title>
+  <link rel="stylesheet" href="iniciarsesion.css">
+  <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/pecita" rel="stylesheet">
+</head>
+<body>
+  <div class="login-page">
+    <header class="login-header">
+      <a href="index.html" class="brand" aria-label="Volver al inicio">
+        <img src="images/image.png" alt="Logo Viajes de Película" class="brand-logo">
+        <h1>Viajes de Película</h1>
+      </a>
+      <a href="index.html" class="back-link">← Volver</a>
+    </header>
+
+    <main class="login-main">
+      <section class="login-card" aria-labelledby="login-title">
+        <h2 id="login-title">Inicia sesión</h2>
+        <p class="login-subtitle">Accede para continuar tu aventura cinematográfica</p>
+
+        <form class="login-form">
+          <label class="input-group">
+            <span>Correo electrónico</span>
+            <input type="email" name="email" placeholder="tu@correo.com" required>
+          </label>
+
+          <label class="input-group">
+            <span>Contraseña</span>
+            <input type="password" name="password" placeholder="Introduce tu contraseña" required>
+          </label>
+
+          <div class="form-actions">
+            <label class="remember">
+              <input type="checkbox" name="remember">
+              Recordarme
+            </label>
+            <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
+          </div>
+
+          <button type="submit" class="login-submit">Acceder</button>
+        </form>
+
+        <p class="register-hint">¿No tienes cuenta? <a href="Registro.html">Regístrate aquí</a></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <img src="images/image.png" alt="Logo" class="logoimg">
+        <button class="sobre-nosotros-btn" onclick="window.location.href='sobrenosotros.html'">Sobre Nosotros</button>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-tag">¿Necesitas ayuda?</p>
+        <p class="footer-phone">📞 9345556738</p>
+        <p class="footer-email">📧 viajesdepelicula.agencia.es</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
