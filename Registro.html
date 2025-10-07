@@ -4,27 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="diseñoregistro.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
     <title>Registro</title>
 </head>
-<header>
-<link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-    <h2>Sobre nosotros</h2>
-    <div class="botones">
-        <button class="login">Iniciar sesión</button>
-        <button class="registro">Registrarse</button>
-    </div>
-</header>
 
 <body>
-<section class="caja">
-    <h3 class="titulo">Introduce tus datos</h3>
-    <p>
-      Este es el texto dentro de la caja.  
-      Aquí puedes seguir escribiendo más contenido, párrafos, listas o lo que quieras.
-    </p>
-  </section>
+
+    <header>
+        <h2>Registrate</h2>
+        <div class="botones">
+            <button class="login">Iniciar sesión</button>
+            <button class="registro">Registrarse</button>
+        </div>
+    </header>
+
+
+    <main class="contenedor-principal">
+        <article class="caja">
+            <p class="textodentro">Introduce tus datos personales</p>
+            <form action="#" method="POST">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="********" required>
+
+                <label for="telefono">Número de teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" required>
+            </form>
+
+            <button class="registrarse">Registrese</button>
+        </article>
+
+        <img class="imagen-derecha"
+            src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDEzfHx8ZW58MHx8fHx8"
+            alt="Imagen registro">
+    </main>
+    <footer class="footer">
+
+        <span class="footer-left">
+            <span class="icon-claqueta">🎬</span>
+            <span class="ovalo-rojo">Sobre nosotros</span>
+        </span>
+
+        <span class="footer-right">
+            <span class="footer-item">
+                <span class="icon">❓</span>
+                <span class="texto">¿Necesitas ayuda?</span>
+            </span>
+            <span class="footer-item">
+                <span class="icon">📞</span>
+                <span class="texto">934556738</span>
+            </span>
+            <span class="footer-item">
+                <span class="icon">🌐</span>
+                <span class="texto">viajesdepelicula.agencia.es</span>
+            </span>
+        </span>
+    </footer>
 </body>
 
 </html>
