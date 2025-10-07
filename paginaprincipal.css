@@ -280,7 +280,7 @@ main {
     height: 64px;
 }
 
-.sobre-nosotras-btn {
+.sobre-nosotros-btn {
     padding: 0.6rem 1.6rem;
     background-color: #ebb0b5;
     border: none;
@@ -292,7 +292,7 @@ main {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.sobre-nosotras-btn:hover {
+.sobre-nosotros-btn:hover {
     opacity: 0.85;
     transform: translateY(-2px);
 }
